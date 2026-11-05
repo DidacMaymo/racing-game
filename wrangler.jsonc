@@ -1,0 +1,10 @@
+// Cloudflare Workers (static assets). Despliegue: `npm run deploy:cf` (requiere `npx wrangler login`).
+// Alternativa sin esto: Cloudflare Pages conectado al repo con build `npm run build` y salida `dist`.
+{
+  "name": "chancla-kart",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
